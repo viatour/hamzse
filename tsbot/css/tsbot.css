@@ -1,0 +1,39 @@
+h1 {
+	font-size: 96px;
+	font-weight: bold;
+	font-family: "Francois One","Century Gothic",sans-serif;
+	color: crimson;
+	text-align: center;
+	margin: 25px;
+	margin-bottom: 0px;
+}
+body {
+	background: url(../img/bg_ps.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+table {
+font-family: "Raleway","Century Gothic",sans-serif;
+background-color: rgba(0,0,0,0.35);
+color: LightCyan;
+border: 5px solid gray;
+border-collapse: collapse;
+
+}
+.fejlec {
+	text-align: center;
+	font-weight: bold;
+	font-size: 22px;
+	color: white;
+	font-family: "Century Gothic", sans-serif;
+}
+.vastag {
+	font-weight: bold;
+}
+
+.uj {
+	color: red;
+	font-style: italic;	
+	font-weight: bold;
+	font-size: 15px;
+}

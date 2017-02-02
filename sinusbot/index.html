@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Átirányítás a Sinusbot webes felületére</title>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="2; URL=http://www.hamzse.hu:8087">
+<meta name="keywords" content="automatic redirection">
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.hamzse.hu/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+</head>
+<body>
+Pár másodpercen belül át leszel irányítva a Sinusbot webes felületére. Ha mégsem, <a href="http://hamzse.hu:8087">Kattints ide!</a>
+</body>
+</html>

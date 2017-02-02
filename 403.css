@@ -1,0 +1,11 @@
+p {
+	font-size: 72px;
+	font-family: "Century Gothic",sans-serif;
+	display: inline-block;
+	white-space: nowrap;
+	
+}
+p:hover {
+	color: red;
+	background-color: cyan;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="note.ico" type="image/ico">
+<link href="css/tsbot.css" type="text/css" rel="stylesheet">
+<link href="../navbar.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Francois+One|Raleway" rel="stylesheet">
+<title>Zenebot Kódok</title>
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.hamzse.hu/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+</head>
+
+<body>
+<nav>
+
+<ul>
+	<li><a href="/index.html">Főoldal</a></li>
+	<li class="active"><a href="/tsbot/index.html">Ts bot</a></li>
+	<li><a href="/irj/index.html">Spam</a></li>
+
+	<li style="float:right"><a href="/stalin/index.html" target="_blank">Rainbow Stalin</a></li>
+	<!--<li style="float:right"><a href="/swaggylord/index.html" target="_blank">Karácsony</a></li>-->
+	<li style="float:right"><a href="/ave/index.htm" target="_blank">Ave</a></li>
+</ul>
+</nav>
+<h1>Zenebot kódjai</h1>
+
+<table id = "tabla" width="800" border="1" align="center">
+  <tr>
+    <td width="130" class="fejlec">Kód<span class="uj">(új!)</span></td>
+    <td width="654" class="fejlec">Jelentése</td>
+  </tr>
+  <tr>
+    <td class="vastag">!register &lt;név&gt;</td>
+    <td>Regisztrál. Valamennyi idő kell, míg az istenek elbíráljá a kérésedet. Utána tudod a többi parancsot használni.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!next</td>
+    <td>A lejátszási listában lévő következő számra ugrik.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!prev</td>
+    <td>A lejátszási listában lévő előző számra ugrik.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!search &lt;szöveg&gt;</td>
+    <td>Keres a helyi adatbázisban.</td>
+  </tr>
+    <tr>
+    <td class="vastag">!play &lt;szöveg&gt;</td>
+    <td>Az az adatbázisból játszik le számot. Elég flexibilis. <i>Például ha beírod hogy <b>!play schnappi</b> már is lejátsza neked a 'Schnappi Das Kleine Krokodil' című számot.</i></td>
+  </tr>
+    <tr>
+    <td class="vastag">!playlist &lt;szöveg&gt;<span class="uj">(új!)</span></td>
+    <td>Elindít egy, az istenek által beállított lejátszási listát. <i>Elérhető lejátszási listák: All time pop songs, GACCHI HEAVEN, Drum, Chill. (Mint a többi, ez is flexibilis.. Pl. elég csak beírni, hogy GAC. Ha valamiért mégsem indulna, írd be a !stop parancsot a jelenlegi szám leállításához; akkor észbe kap.</td>
+  </tr>
+
+  <tr>
+    <td class="vastag">!yt &lt;url&gt;</td>
+    <td>Youtube-ról letölt videót, majd lejátsza a hangsávját azonnal.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!qyt &lt;url&gt;</td>
+    <td>Ugyan az mint az előző, csak most kedvesek a videók, és beállnak a sorba, nem szakítják félbe egymást. <i>Tipp: Kérhetsz egymás után többet is, mik sorban fognak lejátszódni.</i></td>
+  </tr>
+  <tr>
+    <td class="vastag">!ytdl &lt;url&gt;</td>
+    <td>Azonos a <b>!yt</b> paranccsal, viszont ebben az esetben eltárolódik a letöltött videó az adatbázisunkban, <i> így utána bármikor letudod játszani a <b>!play</b> paranccsal</td>
+  </tr>
+  <tr>
+    <td class="vastag">!stream &lt;url&gt;</td>
+    <td>Akár a kedvenc rádiódat is hallgathatod, feltéve ha vannak online is.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!queue</td>
+    <td>Megszakított lejátszási listát folytat.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!queue &lt;szöveg/uuid&gt;</td>
+    <td>Számot ad hozzá az adatbázisból a meglévő lejátszási listához.</td>
+  </tr>
+
+  <tr>
+    <td class="vastag">!volume up </td>
+    <td>Kakaót ad rá. <i>Tipp: Ha már zúg a füled, ideje <u>inkább lejjebb</u> venned.</i></td>
+  </tr>
+  <tr>
+    <td class="vastag">!volume down </td>
+    <td>Lejjebb veszi a hangerőt.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!volume &lt;érték&gt;</td>
+    <td>[0;100] intervallumban lehet megadni a hangerőt. Tipp: volume 0 lenémitja a botot.</i></td>
+  </tr>
+  <tr>
+    <td class="vastag">!stop</td>
+    <td>Leállítja az aktuális zenét. Ilyenkor általában az adatbázisból játszik le egy másik számot. <i>Tipp: Ha zavar a bot, akkor némítsd le a <b>!volume 0</b> paranccsal!</i></td>
+  </tr>
+  <tr>
+    <td class="vastag">!shuffle</td>
+    <td>Felrázva, nem keverve.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!repeat</td>
+    <td><i>És az egyik felkiált: Repetát!</i></td>
+  </tr>
+  <tr>
+    <td class="vastag">!playing</td>
+    <td>Kiírja a jelenlegi szám címét.</td>
+  </tr>
+  <tr>
+    <td class="vastag">!come</td>
+    <td>Odamegy hozzád a bot. Just Chill szobában minőségibb hangzású sztereó kodek van, de kívánságod szerint fellép a bénább hangzású  szobádban is. Lejelszavazott szobába nem megy. <i>Tipp: Hívd be a botot a szobádba, utána jelszavazd le a szobát.</i> Ha kiüresedett a szoba, akkor hazamegy a bot.</td>
+  </tr>
+    <td class="vastag">!goaway</td>
+    <td>Ha szeretnéd, hogy vissza menjen a Just Chill szobába, itt a mód rá.</td>
+  </tr>
+</table>
+</body>
+</html>
