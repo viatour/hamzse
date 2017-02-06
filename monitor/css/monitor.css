@@ -1,0 +1,35 @@
+* {
+font-family: "Century Gothic",sans-serif;
+}
+
+h1 {
+color:grey;
+text-align: center;
+font-size:56px;
+}
+
+#button1 {
+background-color: green;
+border: none;
+color: black;
+padding: 150px 200px;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+float: left;
+margin-left: 50px;
+font-size: 64px;
+}
+
+#button2 {
+background-color: green;
+border: none;
+color: white;
+padding: 150px 200px;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+float: right;
+margin-right: 50px;
+font-size: 64px;
+}
