@@ -26,9 +26,12 @@ border-collapse: collapse;
 	font-size: 22px;
 	color: white;
 	font-family: "Century Gothic", sans-serif;
+	border-bottom: 7px solid gray;
+	border-top: 7px solid gray;
 }
 .vastag {
 	font-weight: bold;
+	text-align: center;
 }
 
 .uj {
