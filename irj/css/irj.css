@@ -10,3 +10,7 @@ legend, p {
 legend {
 	font-weight: bold !important;
 }
+
+form {
+	margin-top: 10px;
+}

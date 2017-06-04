@@ -4,8 +4,8 @@ h1 {
 	font-family: "Francois One","Century Gothic",sans-serif;
 	color: crimson;
 	text-align: center;
-	margin: 25px;
-	margin-bottom: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 body {
 	background: url(../img/bg_ps.jpg) no-repeat center center fixed;
@@ -13,11 +13,11 @@ body {
 }
 
 table {
-font-family: "Raleway","Century Gothic",sans-serif;
-background-color: rgba(0,0,0,0.35);
-color: LightCyan;
-border: 5px solid gray;
-border-collapse: collapse;
+	font-family: "Raleway","Century Gothic",sans-serif;
+	background-color: rgba(0,0,0,0.35);
+	color: LightCyan;
+	border: 5px solid gray;
+	border-collapse: collapse;
 
 }
 .fejlec {
