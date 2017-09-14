@@ -4,10 +4,9 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: rgba(0,0,0,0.5);
-	border-top-left-radius:22px;
-	border-bottom-left-radius:22px; 
-	border-top-right-radius:22px;
-	border-bottom-right-radius:22px;
+	border-bottom-left-radius:14px; 
+	border-top-right-radius:14px;
+
 }
 
 li {
@@ -23,6 +22,8 @@ li a {
     text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
+	border-bottom-left-radius:14px; 
+	border-top-right-radius:14px;
 }
 
 a:hover:not(.active) {
@@ -30,5 +31,7 @@ a:hover:not(.active) {
 }
 
 .active {
-background-color:#fc6900;
+	background-color:#fc6900;
+	border-bottom-left-radius:14px; 
+	border-top-right-radius:14px;
 }
