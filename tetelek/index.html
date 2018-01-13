@@ -42,15 +42,56 @@
 	<li style="float:right"><a href="/ave/index.htm" target="_blank">Ave</a></li>
 </ul>
 
-</nav>
+<script>
 
+var TARGY_EGYIKSE = 0
+var TARGY_TORI = 1;
+var TARGY_HALO = 2;
+
+var gs_targyHref = [];
+var gci_targy = TARGY_EGYIKSE;
+
+gs_targyHref[TARGY_EGYIKSE]	= "";
+gs_targyHref[TARGY_TORI]	= "#tori";
+gs_targyHref[TARGY_HALO]	= "#halo";
+
+var INITELEJE = 69;
+
+if(window.location.hash){
+	var i_targy = window.location.hash.substring(1);
+	setTimeout( function() {targySelect(window[i_targy]); }, 1);
+}
+
+var INITVEGE = 420;
+
+
+function targySelect(ai_targy){
+
+	if(TARGY_EGYIKSE != gci_targy)
+		$(gs_targyHref[gci_targy]).collapse("hide");
+
+	if(gci_targy == ai_targy){
+	
+	gci_targy = TARGY_EGYIKSE;
+	window.location = "#0";
+	return;
+	}
+	gci_targy = ai_targy;
+	window.location = "#" + gci_targy;
+
+	$(gs_targyHref[gci_targy]).collapse("show");
+}
+
+</script>
+
+</nav>
 
 <div id="gombok">
 <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#tori" aria-expanded="false" aria-controls="">
+  <a class="btn btn-primary" onclick="targySelect(TARGY_TORI)" aria-expanded="false" aria-controls="">
     Történelem
   </a>
-  <a class="btn btn-primary" data-toggle="collapse" href="#halo" aria-expanded="false" aria-controls="">
+  <a class="btn btn-primary" onclick="targySelect(TARGY_HALO)" aria-expanded="false" aria-controls="">
     Hálózat
   </a>
 </p>
