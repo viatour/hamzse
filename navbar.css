@@ -19,7 +19,7 @@ li a {
     color: crimson !important;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none; /*Underline in BS*/
+    text-decoration: none !important; /*Underline in BS*/
 	text-transform: uppercase;
 	font-weight: bold;
 	border-bottom-left-radius:14px; 
@@ -27,7 +27,8 @@ li a {
 }
 
 a:hover:not(.active) {
-    background-color: #333 ;
+    background-color: #333;
+	text-decoration: underline;
 }
 
 .active {
