@@ -3,10 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<link href="../navbar.css" type="text/css" rel="stylesheet">
-	<link href="css/tetelek.css" type="text/css" rel="stylesheet">
 	<title>Tételek</title>
-	<!-- Piwik -->#
+	<!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -21,6 +19,14 @@
   })();
 </script>
 <!-- End Piwik Code -->
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<!--BS-->
+	<link href="../navbar.css" type="text/css" rel="stylesheet">
+	<link href="css/tetelek.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <nav>
@@ -38,5 +44,22 @@
 
 </nav>
 
+
+<div id="gombok">
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#tori" aria-expanded="false" aria-controls="collapseExample">
+    Történelem
+  </a>
+  <!--<a class="btn btn-primary" data-toggle="collapse" href="#magyar" aria-expanded="false" aria-controls="collapseExample">
+    Irodalom
+  </a>-->
+</p>
+<div class="collapse" id="tori">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
+</div>
+<!--<div class="collapse" id="magyar">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
+</div>-->
+</div>
 </body>
 </html>
