@@ -45,21 +45,71 @@
 </nav>
 
 
-<div id="gombok">
+<!--<div id="gombok accordion" data-children=".elem">
+<div class="elem">
 <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#tori" aria-expanded="false" aria-controls="collapseExample">
+  <a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#tori" aria-expanded="false" aria-controls="collapseExample">
     Történelem
   </a>
-  <!--<a class="btn btn-primary" data-toggle="collapse" href="#magyar" aria-expanded="false" aria-controls="collapseExample">
-    Irodalom
-  </a>-->
+</div>
+<div class="elem"
+  <a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#halo" aria-expanded="false" aria-controls="collapseExample">
+    Hálózat
+  </a>
 </p>
+</div>
+</div>
 <div class="collapse" id="tori">
     <iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
 </div>
-<!--<div class="collapse" id="magyar">
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
-</div>-->
+<div class="collapse" id="halo">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vT0wI0uO1FXrn44S_pQ-vzcxKOPrw-Zpnax5IKy3Gb-w2atBmfB7C9NHf-E-clgndlyHCVLWI-yufOh/pub?embedded=true" width="100%" height="400px"></iframe>
 </div>
+</div>-->
+
+
+<div id="gombok">
+<div id="accordion" data-children=".elem">
+	<div class="elem">
+		<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#tori" role="button" aria-expanded="true" aria-controls="tori">
+		Történelem
+		</a>
+		<div id="tori" class="collapse">
+			<iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
+		</div>
+	</div>
+	
+	<div class="elem">
+		<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#halo" role="button" aria-expanded="true" aria-controls="halo">
+		Hálózat
+		</a>
+		<div id="halo" class="collapse">
+			<iframe src="https://docs.google.com/document/d/e/2PACX-1vT0wI0uO1FXrn44S_pQ-vzcxKOPrw-Zpnax5IKy3Gb-w2atBmfB7C9NHf-E-clgndlyHCVLWI-yufOh/pub?embedded=true" width="100%" height="400px"></iframe>
+		</div>
+	</div>
+</div>
+</div>
+<!--<div id="exampleAccordion" data-children=".item">
+  <div class="item">
+    <a class="btn btn-primary" data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion1" role="button" aria-expanded="true" aria-controls="exampleAccordion1">
+      Történelem
+    </a>
+    <div id="exampleAccordion1" class="collapse" role="tabpanel">
+      <p class="mb-3">
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
+      </p>
+    </div>
+  </div>
+  <div class="item">
+    <a  class="btn btn-primary"data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" role="button" aria-expanded="false" aria-controls="exampleAccordion2">
+      Hálózat
+    </a>
+    <div id="exampleAccordion2" class="collapse" role="tabpanel">
+      <p class="mb-3">
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vT0wI0uO1FXrn44S_pQ-vzcxKOPrw-Zpnax5IKy3Gb-w2atBmfB7C9NHf-E-clgndlyHCVLWI-yufOh/pub?embedded=true" width="100%" height="400px"></iframe>
+      </p>
+    </div>
+  </div>
+</div>-->
 </body>
 </html>

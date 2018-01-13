@@ -28,7 +28,6 @@ li a {
 
 a:hover:not(.active) {
     background-color: #333;
-	text-decoration: underline;
 }
 
 .active {
