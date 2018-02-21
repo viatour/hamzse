@@ -1,4 +1,4 @@
-ul {
+.nav-element ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -9,12 +9,12 @@ ul {
 
 }
 
-li {
+.nav-element li  {
     float: left;
 	font-family: "Century Gothic", sans-serif;
 }
 
-li a {
+.nav-element li a  {
     display: block;
     color: crimson !important;
     text-align: center;

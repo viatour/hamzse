@@ -1,0 +1,43 @@
+* {
+	font-family: "Century Gothic", sans-serif;
+}
+
+body {
+	background-color: #091a24;
+}
+
+/*#felsorolas li {
+	font-size: 30px;
+	list-style-type: none;
+	padding: 20px;
+
+}
+#felsorolas li a {
+	text-decoration:none;
+	color: crimson;
+	background-color: black;
+	padding: 8px;
+}
+*/
+td:hover {
+	background-color: transparent!important;
+}
+
+table {
+	border: 0px;
+	border-collapse: collapse;
+	margin-top: 50px;
+}
+
+td a {
+	text-decoration:none;
+	color: crimson;
+	font-size: 40px;
+	background-color: black;
+	padding: 10px 20px;
+}
+
+td {
+	/*text-align: center;*/
+	padding: 20px 40px;
+}
