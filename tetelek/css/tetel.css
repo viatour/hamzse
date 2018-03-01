@@ -1,0 +1,17 @@
+body{
+	background-color: #091a24;
+}
+
+table, td, th{
+	border: 1px solid gray;
+}
+	
+table{
+	border: 5px solid gray;
+	font-family: monospace, sans-serif;
+	color: white;
+}
+
+a:visited{
+	color: purple;
+}

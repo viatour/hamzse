@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Tételek</title>
+	<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.hamzse.hu/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+<!--Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+<!--BS-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/ico">
+	<link href="../navbar.css" type="text/css" rel="stylesheet">
+	<link href="css/tetelek.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav-element">
+
+<ul>
+	<li class="nav-element"><a href="/index.html">Főoldal</a></li>
+	<li class="nav-element"><a href="/tsbot/index.html">Ts bot</a></li>
+	<li class="nav-element"><a href="/irj/index.html">Spam</a></li>
+	<li class="active nav-element"><a href="/tetelek/index.html">Tételek</a></li>
+
+	
+	<li class="nav-element" style="float:right"><a href="/egyeb/index.html">Egyéb</a></li>
+	<li class="nav-element" style="float:right"><a href="/stalin/index.html" target="_blank">Rainbow Stalin</a></li>
+	<!--<li style="float:right"><a href="/swaggylord/index.html" target="_blank">Karácsony</a></li>-->
+	<li class="nav-element" style="float:right"><a href="/ave/index.html" target="_blank">Ave</a></li>
+</ul>
+</nav>
+
+<script>
+
+var gc_targy;
+
+function targySelect(a_targy){
+	$(gc_targy).collapse("hide");
+	gc_targy = a_targy;
+	$(gc_targy).collapse("show");
+}
+
+</script>
+
+
+<div id="gombok">
+<p>
+  <a class="btn btn-primary" onclick="targySelect('#tori')" aria-expanded="false" aria-controls="">
+    Történelem
+  </a>
+  <a class="btn btn-primary" onclick="targySelect('#halo')" aria-expanded="false" aria-controls="">
+    Hálózat
+  </a>
+</p>
+</div>
+
+<div class="collapse" id="tori">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
+</div>
+<div class="collapse" id="halo">
+    <iframe src="https://docs.google.com/document/d/e/2PACX-1vT0wI0uO1FXrn44S_pQ-vzcxKOPrw-Zpnax5IKy3Gb-w2atBmfB7C9NHf-E-clgndlyHCVLWI-yufOh/pub?embedded=true" width="100%" height="400px"></iframe>
+</div>
+</div>
+
+<!-- Accordion
+<div id="gombok">
+<div id="accordion" data-children=".elem">
+	<div class="elem">
+		<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#tori" role="button" aria-expanded="true" aria-controls="tori">
+		Történelem
+		</a>
+		<div id="tori" class="collapse">
+			<iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
+		</div>
+	</div>
+	
+	<div class="elem">
+		<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#halo" role="button" aria-expanded="true" aria-controls="halo">
+		Hálózat
+		</a>
+		<div id="halo" class="collapse">
+			<iframe src="https://docs.google.com/document/d/e/2PACX-1vT0wI0uO1FXrn44S_pQ-vzcxKOPrw-Zpnax5IKy3Gb-w2atBmfB7C9NHf-E-clgndlyHCVLWI-yufOh/pub?embedded=true" width="100%" height="400px"></iframe>
+		</div>
+	</div>
+</div>
+</div>-->
+
+</body>
+</html>

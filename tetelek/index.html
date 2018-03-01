@@ -1,35 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	
-	<title>Tételek</title>
-	<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//analytics.hamzse.hu/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<!-- End Piwik Code -->
-<!--Bootstrap-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-<!--BS-->
-	<link rel="shortcut icon" href="favicon.ico" type="image/ico">
-	<link href="../navbar.css" type="text/css" rel="stylesheet">
-	<link href="css/tetelek.css" type="text/css" rel="stylesheet">
-</head>
-<body>
+<!DOCTYPE HTML>
+<html lang="hu">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tételek</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/ico">
+	<!--	<link href="./css/index.css" type="text/css" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"> 
+		<link href="../navbar.css" type="text/css" rel="stylesheet">
+		<link href="css/tetel.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
 <nav class="nav-element">
 
 <ul>
@@ -45,61 +25,60 @@
 	<li class="nav-element" style="float:right"><a href="/ave/index.html" target="_blank">Ave</a></li>
 </ul>
 </nav>
-
-<script>
-
-var gc_targy;
-
-function targySelect(a_targy){
-	$(gc_targy).collapse("hide");
-	gc_targy = a_targy;
-	$(gc_targy).collapse("show");
-}
-
-</script>
-
-
-<div id="gombok">
 <p>
-  <a class="btn btn-primary" onclick="targySelect('#tori')" aria-expanded="false" aria-controls="">
-    Történelem
-  </a>
-  <a class="btn btn-primary" onclick="targySelect('#halo')" aria-expanded="false" aria-controls="">
-    Hálózat
-  </a>
+<table>
+	<tr>
+		<th colspan="4">Hálózat</th>
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td>OSI modell</td>
+		<td>A</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>2.</td>
+		<td>Statikus forgalomirányítás</td>
+		<td>A</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td>Dinamikus forgalomirányítás</td>
+		<td><a href="http://www.hamzse.hu/files/dinamikus_horvathm.pdf" target="_blank">A</a></td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td>IPv4 és IPv6 címek</td>
+		<td>A</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>5.</td>
+		<td>VLSM és CIDR</td>
+		<td>A</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>6.</td>
+		<td>VLANok és portbiztonság</td>
+		<td>A</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>7.</td>
+		<td>Vezetékes átviteli közegek, SOHO router</td>
+		<td>A</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>8.</td>
+		<td>P2P, szerver-kliens kapcsolat</td>
+		<td>A</td>
+		<td>B</td>
+	</tr>
+</table>
 </p>
-</div>
-
-<div class="collapse" id="tori">
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
-</div>
-<div class="collapse" id="halo">
-    <iframe src="https://docs.google.com/document/d/e/2PACX-1vT0wI0uO1FXrn44S_pQ-vzcxKOPrw-Zpnax5IKy3Gb-w2atBmfB7C9NHf-E-clgndlyHCVLWI-yufOh/pub?embedded=true" width="100%" height="400px"></iframe>
-</div>
-</div>
-
-<!-- Accordion
-<div id="gombok">
-<div id="accordion" data-children=".elem">
-	<div class="elem">
-		<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#tori" role="button" aria-expanded="true" aria-controls="tori">
-		Történelem
-		</a>
-		<div id="tori" class="collapse">
-			<iframe src="https://docs.google.com/document/d/e/2PACX-1vQeDwhla7uyElDycu3JSgE4j0GqcM7-3tuMc7RV6t8lGERcFdoeF7iGcC0eJAJ9l3m6dhUjTZGBokZ-/pub?embedded=true" width="100%" height="800px"></iframe>
-		</div>
-	</div>
-	
-	<div class="elem">
-		<a class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#halo" role="button" aria-expanded="true" aria-controls="halo">
-		Hálózat
-		</a>
-		<div id="halo" class="collapse">
-			<iframe src="https://docs.google.com/document/d/e/2PACX-1vT0wI0uO1FXrn44S_pQ-vzcxKOPrw-Zpnax5IKy3Gb-w2atBmfB7C9NHf-E-clgndlyHCVLWI-yufOh/pub?embedded=true" width="100%" height="400px"></iframe>
-		</div>
-	</div>
-</div>
-</div>-->
-
-</body>
+	</body>
 </html>
