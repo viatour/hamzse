@@ -17,9 +17,9 @@ a:visited{
 	color: purple;
 }
 
-@media screen and (max-width: 540px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     table, td, th{
 	border: 1px solid gray;
-	font-size: 4vw;
-}
+	font-size: 5vw;
+	}
 }
